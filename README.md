@@ -1,8 +1,14 @@
 # infra-rds-mysql-tech-challenge
 
+## Membros do Grupo 2
+- [Danilo Monteiro](https://github.com/dmonteirosouza)
+- [Marcel Cozono](https://github.com/macozono)
+- [Viviane Scarlatti](https://github.com/viviane-scarlatti)
+- [Vinicius Furin](https://github.com/VFurin)
+- [Vitor Walcker](https://github.com/VitorWalcker)
 
 ### Descrição
-Este projeto visa automatizar a criação de um [Amazon Relational Database Service (Amazon RDS)](https://aws.amazon.com/pt/rds/) usando [GitHub Workflow](https://docs.github.com/pt/actions) em uma conta AWS utilizando o terraform. 
+Este projeto visa automatizar a criação de um [Amazon Aurora é um Relational Database Management System (RDBMS – Sistema de gerenciamento de banco de dados relacional)](https://aws.amazon.com/pt/rds/aurora/) usando [GitHub Workflow](https://docs.github.com/pt/actions) em uma conta AWS utilizando o terraform. 
  é um serviço da web que facilita a configuração, a operação e escalabilidade de um banco de dados relacional na nuvem. Ele fornece capacidade econômica e redimensionável para um banco de dados relacional padrão do setor e gerencia tarefas comuns de administração de banco de dados. O Amazon Aurora é um mecanismo de banco de dados relacional totalmente gerenciado, criado para a nuvem e compatível com MySQL e PostgreSQL. O Amazon Aurora faz parte do Amazon RDS.
 ## Configuração
 

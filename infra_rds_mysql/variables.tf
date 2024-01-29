@@ -88,12 +88,12 @@ variable "rds_sg" {
 variable "vpc_id" {
   description = "The VPC ID"
   type        = string
-  default     = ""
+  default     = "vpc-028610ead2f7d6752"
 
 }
 
 variable "security_group_id" {
   description = "The security group ID"
   type        = string
-  default     = ""
+  default     = "sg-0d1c68c69e3d97445"
 }
