@@ -2,7 +2,7 @@ name: 'Deploy Infraestrutura do RDS Aurora Mysql'
 
 on:
   push:
-    branches: [ "feature/criando-rds-mysql" ]
+    branches: [ "main" ]
   pull_request:
     types: [assigned]
 
