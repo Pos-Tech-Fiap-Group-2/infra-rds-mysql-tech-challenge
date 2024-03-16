@@ -100,12 +100,12 @@ variable "security_group_id" {
 variable "vpc_security_group_ids" {
   description = "A list of VPC security group IDs to associate with the DB cluster."
   type        = list(string)
-  default     = ["sgr-0413be0dd76e7d1d3", "sgr-0eff454ba26bef188", "sgr-0fb652b58a3ef6b85", "sgr-07ae307679518946e"]  
+  default     = ["sgr-0413be0dd76e7d1d3", "sgr-0eff454ba26bef188", "sgr-0fb652b58a3ef6b85", "sgr-07ae307679518946e"]
 }
 
 variable "subnet_ids" {
   description = "A list of VPC subnet IDs."
   type        = list(string)
-  default     =  ["subnet-04774bef44d5c31f2", "subnet-05fda1d146da5a61b"]
-  
+  default     = ["subnet-04774bef44d5c31f2", "subnet-05fda1d146da5a61b"]
+
 }
