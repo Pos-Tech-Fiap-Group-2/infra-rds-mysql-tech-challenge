@@ -88,12 +88,24 @@ variable "rds_sg" {
 variable "vpc_id" {
   description = "The VPC ID"
   type        = string
-  default     = "vpc-028610ead2f7d6752"
+  default     = "vpc-0a0d5209bb8e24134"
 
 }
 
 variable "security_group_id" {
   description = "The security group ID"
   type        = string
-  default     = "sg-0d1c68c69e3d97445"
+  default     = "sg-0b0624f75ce1a29f8"
+}
+variable "vpc_security_group_ids" {
+  description = "A list of VPC security group IDs to associate with the DB cluster."
+  type        = list(string)
+  default     = ["sgr-0413be0dd76e7d1d3", "sgr-0eff454ba26bef188", "sgr-0fb652b58a3ef6b85", "sgr-07ae307679518946e"]  
+}
+
+variable "subnet_ids" {
+  description = "A list of VPC subnet IDs."
+  type        = list(string)
+  default     =  ["subnet-04774bef44d5c31f2", "subnet-05fda1d146da5a61b"]
+  
 }
