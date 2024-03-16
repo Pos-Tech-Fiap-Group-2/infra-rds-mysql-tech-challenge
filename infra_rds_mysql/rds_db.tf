@@ -1,6 +1,6 @@
 resource "aws_db_subnet_group" "mysql_aurora_group" {
   name       = "tech-challenge-db-subnet-group"
-  subnet_ids = var.subnet_ids
+  subnet_ids = tolist(data.aws_subnets.tech-challenge-subnet.ids)
 
   tags = merge(local.common_tags, {
     Name = "tech-challenge-subnet-group"
@@ -17,7 +17,7 @@ resource "aws_rds_cluster" "tech_challenge_db" {
   master_username        = var.username
   master_password        = var.password
   skip_final_snapshot    = var.skip_final_snapshot
-  vpc_security_group_ids = var.vpc_security_group_ids
+  vpc_security_group_ids = [data.aws_security_group.tech-challenge-alb-sg.id]
   db_subnet_group_name   = aws_db_subnet_group.mysql_aurora_group.name
   port                   = var.port
 
